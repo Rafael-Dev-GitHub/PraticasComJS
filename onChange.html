@@ -1,0 +1,21 @@
+<html lang='pt-BR'>
+ <head>
+        <title>Onchange JS</title>
+		 <meta charset="UTF-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script>
+       function Verifica_Valor(val){
+           if(val<7){
+               document.getElementById("valor").style.color="red"
+           } else{
+               document.getElementById("valor").style.color="blue"
+           }
+       }
+   </script>
+ </head>
+  <body>
+      <p>Vamos ver o evento ONCHANGE, digite um valor maior que 7</p>
+      <input type="text" id="valor" onchange="Verifica_Valor(this.value)"/>
+  </body>
+ </head>
+</html>

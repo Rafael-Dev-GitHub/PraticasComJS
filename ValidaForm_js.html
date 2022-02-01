@@ -1,0 +1,33 @@
+<html>
+    <head>
+    <meta content= "text/html; charset=utf-8" http-equiv="Content-Type">
+     <title>Formulário</title>
+     <script>
+         function valida(){
+            var n = document.forms["formulario"]["nome"].value; 
+         if(n==""){
+             document.getElementById("nome").innerHTML="O nome deve ser preenchido";
+         }else{
+             document.getElementById("nome").innerHTML="";
+            }
+            var t = document.forms["formulario"]["telefone"].value;
+            if(t==""){
+                document.getElementById("telefone").innerHTML="O telefone deve ser preenchido";
+            }else{
+                document.getElementById("telefone").innerHTML="";
+            }
+            if(n==""||t==""){
+                return false;
+            }else{return true}
+            }
+     </script>
+    </head>
+    <body>
+        
+        <form id="formulario" onsubmit="return valida()" method="post"> 
+           Nome <input type="text" name="nome"><p id="nome"></p>
+           Telefone <input type="text" name="telefone"><p id="telefone"></p>
+           <input type="submit" value="Envia"/>
+        </form>
+    </body>
+</html>

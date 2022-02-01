@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content= "text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Formulário</title>
+<script>
+function contas(){
+    document.matematica.soma1.value="2"+3;
+	document.matematica.soma2.value=2+3;
+	document.matematica.multi.value="2"*3;
+}
+</script>
+</head>
+<body>
+ <form name="matematica">
+      Soma1:<input name="soma1"><br>
+	  Soma2:<input name="soma2"><br>
+	  Multiplica:<input name="multi"><br>
+ </form>
+    <button type="button" onclick="contas()">Contas</button>
+</body>
+</html>

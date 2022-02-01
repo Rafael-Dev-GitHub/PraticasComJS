@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content= "text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Filtrando Elementos</title>
+<script type="text/javascript" src="filtrando.js"></script>
+<link href="filtrando.css" rel="stylesheet">
+</head>
+<body>
+   <div id="myBtnContainer">
+       <button class="btn active" onclick="filterSelection('all')">Tudo</button>
+	   <button class="btn" onclick="filterSelection('mala')">Mala</button>
+	   <button class="btn" onclick="filterSelection('sapato')">Sapato</button>
+	   <button class="btn" onclick="filterSelection('blusa')">Blusa</button>
+	   <button class="btn" onclick="filterSelection('calça')">Calça</button>
+   </div>
+   <div class="container">
+        <div class="filterDiv mala">Victor Hugo</div>
+		<div class="filterDiv mala">Louis Vuitton</div>
+		<div class="filterDiv sapato">Kildare</div>
+		<div class="filterDiv sapato">Adidas</div>
+		<div class="filterDiv sapato">Puma</div>
+		<div class="filterDiv blusa">Zara</div>
+		<div class="filterDiv blusa">Lee</div>
+		<div class="filterDiv calça">Levis</div>
+		
+   </div>
+</body>
+</html>
